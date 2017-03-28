@@ -15,13 +15,13 @@
 	//echo "SQL : $sql.<br />";
 	
 	//renvoie la valeur du compteur 
-	$count = $connexion->query($sql)->fetchColumn();
+    $count=compteSQL($sql);
 	echo "COMPTEUR : $count";
 	
 	if($count==1){
 		// Register $myusername, $mypassword and redirect to file "loginSuccess.php"
 		$_SESSION['myusername'] = $myusername;
-		header("location:../vue/loginsuccess.php");
+		header("location:../../formulaire/vue/afficheFormulaire.php");
 	} else {
 		//retourne a la page de login avec une message
 		session_destroy();

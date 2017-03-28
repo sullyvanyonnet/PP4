@@ -1,5 +1,6 @@
 <?php
-	
+	include_once "AccesDonnees.php";
+
 	$ip=explode(".",$_SERVER['SERVER_ADDR']);
 	
 	switch ($ip[0]) {
@@ -9,7 +10,7 @@
 			//local
 			$host = "127.0.0.1";
 			$user = "root";
-			$password = "mesgpass1";
+			$password = "";
 			$dbname = "slam4";
 			$port='3306';
 			break;
@@ -19,30 +20,32 @@
 			//free
 			$host="localhost";
 			$user="erwan.leguen2";
-			$password="****";
+			$password="mesgpass1";
 			$dbname="erwan.leguen2";
 			$port='3306';
-			break;			
+			break;	
+			
+		case 31 :
+			//hostinger
+			$host = "mysql.hostinger.fr";
+			$user = "u627393142_user";
+			$password = "iroise29";
+			$dbname = "u627393142_slam4";
+			$port='3306';
+			break;
 			
 		default :
 			exit ("Serveur non reconnu...");
 			break;	
 	}
 	
-	// ceation du Data Source Name, ou DSN, qui contient les infos
-	// requises pour se connecter � la base.
-	$dsn='mysql:host='.$host.';port='.$port.';dbname='.$dbname;
+	$connexion=connexion($host,$port,$dbname,$user,$password);
 	
-	//echo "DSN : $dsn<br />";
+	if ($connexion) {
+		//echo "Connexion reussie<br />";
+		//echo "Base $dbname selectionnee... <br />";
+		//echo "Mode acces : $modeacces<br />";
 	
-	try {
-		$connexion = new PDO($dsn, $user, $password);
-	}	
-	catch(Exception $e) {
-		echo 'Erreur : '.$e->getMessage().'<br />';
-		echo 'N� : '.$e->getCode();
-		die();
 	}
-	
 	
 ?>

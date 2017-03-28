@@ -8,43 +8,42 @@
 		?>
 	</head>
 
-	<body>
+    <body>
 
-		<div data-role="page" id="index">
-			<div data-role="header">
-				<h1>Acces autorisé</h1>
-			</div><!-- /header -->
-			
-			<div data-role="content">
-				
-				<form style="text-align:center" id="form1" method="get" action="../modele/logout.php" data-ajax="false" >			
-    				<p>
-    					<br /><br />
-    					Bonjour 
-    					<?php 
-    						echo $_SESSION['myusername'];
-    					?>
-    					<br /><br /><br />
-    				</p>
-    				<p>
-	 					<img src="../../images/unlock.png"/ >
-						<br /><br />
-					</p>
-					<p>
-   						<input id="inputsubmit1" type="submit" name="inputsubmit1" value="Deconnexion..." />
-   					</p>
-   				</form>
-				
-			</div><!-- /content -->		
-			
-			<div data-role="footer" data-position="fixed" id='footer'>
-			
-    			
-			</div><!-- /footer -->
-			
-		</div><!-- /page -->
-		
-	</body>
+    <div data-role="page">
+        <div data-role="header">
+            <p>
+                <br /><br />
+                Bonjour
+                <?php
+                echo $_SESSION['myusername'];
+                ?>
+                <br /><br /><br />
+            </p>
+        </div><!-- /header -->
+        <div data-role="content">
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <legend>Choisir un langage informatique :</legend>
+                    <input type="radio" name="radio-choix-1" id="radio-choix-1" value="choix-1" />
+                    <label for="radio-choix-1">PHP</label>
+                    <input type="radio" name="radio-choix-1" id="radio-choix-2" value="choix-2" />
+                    <label for="radio-choix-2">C++</label>
+                    <input type="radio" name="radio-choix-1" id="radio-choix-3" value="choix-3" />
+                    <label for="radio-choix-3">C#</label>
+                    <input type="radio" name="radio-choix-1" id="radio-choix-4" value="choix-4" checked="checked" />
+                    <label for="radio-choix-4">JAVA</label>
+                </fieldset>
+            </div>
+
+        </div><!-- /content -->
+        <div data-role="footer">
+            <h4>&copy;Mesguen Transport  </h4>
+        </div><!-- /footer -->
+    </div><!-- /page -->
+
+
+    </body>
 
 </html>
 

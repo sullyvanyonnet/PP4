@@ -15,7 +15,14 @@
 
 		<div data-role="page">
 			<div data-role="header">
-				<h1>Test des case a cocher</h1>
+                <p>
+                    <br /><br />
+                    Bonjour
+                    <?php
+                    echo $_SESSION['myusername'];
+                    ?>
+                    <br /><br /><br />
+                </p>
 			</div><!-- /header -->
 			<div data-role="content">
 				<div data-role="fieldcontain">

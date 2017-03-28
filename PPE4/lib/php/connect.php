@@ -18,10 +18,10 @@
 			
 		case 212 :
 			//free
-			$host="localhost";
-			$user="erwan.leguen2";
-			$password="mesgpass1";
-			$dbname="erwan.leguen2";
+			$host="anthonybigbdd.mysql.db";
+			$user="anthonybigbdd";
+			$password="Mesgpass1";
+			$dbname="anthonybigbdd";
 			$port='3306';
 			break;	
 			

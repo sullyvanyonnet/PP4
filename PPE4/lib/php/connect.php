@@ -9,7 +9,7 @@
 			//local
 			$host = "127.0.0.1";
 			$user = "root";
-			$password = "";
+			$password = "mesgpass1";
 			$dbname = "slam4";
 			$port='3306';
 			break;
@@ -30,7 +30,7 @@
 	}
 	
 	// ceation du Data Source Name, ou DSN, qui contient les infos
-	// requises pour se connecter à la base.
+	// requises pour se connecter ï¿½ la base.
 	$dsn='mysql:host='.$host.';port='.$port.';dbname='.$dbname;
 	
 	//echo "DSN : $dsn<br />";
@@ -40,7 +40,7 @@
 	}	
 	catch(Exception $e) {
 		echo 'Erreur : '.$e->getMessage().'<br />';
-		echo 'N° : '.$e->getCode();
+		echo 'Nï¿½ : '.$e->getCode();
 		die();
 	}
 	

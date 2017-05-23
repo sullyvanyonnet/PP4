@@ -1,0 +1,91 @@
+@CHARSET "ISO-8859-1";
+
+	#centre_gestion
+	{
+		background : #fffffe;    
+		color : black;
+		text-align : center;
+	}
+
+	table 
+	{
+		margin-left:10%;
+		margin-right: 10%;
+		width:80%;
+		border-collapse: collapse;
+	}
+
+	th
+	{
+		border-color: black;
+		border-style: solid;
+		background : #BDCEFF;
+		border-color: #456BDE;
+		border-width : 2px;
+		text-align : center;
+	}
+	
+	#th_invisible
+	{		
+		border-color: black;
+		border-style: solid;
+		background : #FFFFFF;
+		border-color: #FFFFFF;
+		border-width : 2px;
+		text-align : center;
+	}
+
+	td
+	{
+		border-color: black;
+		border-style: solid;
+		background : #BDCEFF;
+		border-color: #456BDE;
+		border-width : 2px;
+		text-align : center;
+	}
+
+	tr:hover th
+	{
+		color:#000000;
+		background-color: #979FE6;
+	}
+
+	#title
+	{
+		color: white;
+		background: #3447B2;
+		border-color: #3447B2;
+	}
+
+
+	#effacer
+	{
+		background: url(images/delete.png) no-repeat;
+		width: 20px;
+	}	
+
+	#modifier
+	{
+		background: url(images/edit.png)  no-repeat;
+		width: 20px;
+	}	
+
+	#add
+	{	
+		left: 10px;
+		margin-right: 2%;
+		background: url(images/Green_add.png) no-repeat;
+		background-color: white;
+		width: 100px;
+		height: 20px;
+	}
+	
+	#back
+	{
+		background: url(images/Green_ok.png) no-repeat;
+		background-color: white; 
+		width: 100px;
+		height: 20px;
+	}text-align : center;
+	}
